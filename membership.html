@@ -1,0 +1,331 @@
+
+<!DOCTYPE html>
+<html>
+<!--Raihan Hossain-->
+<!-- 12/13/2018 -->
+<head>
+<title>R.H FITNESS</title>
+
+<style type="text/css">
+    h1 {
+        text-align:center;
+	    font-family: AR BERKLEY;
+		color: #ffa500;
+		 
+	    }
+		
+	h2 {
+	font-family: Broadway;
+        text-align:center;
+	     color: white;
+		  font-size:35px;
+	
+	    }
+	h3 {
+	
+        
+	     color: red;
+		  font-size:27px;
+	
+	    }
+	h4 {
+        
+	     color: #ffa500;
+		  font-size:30px;
+	
+	    }
+		i{
+		color: #ffa500;
+		}
+	p{
+	color: #14BEFF;
+	font-size:24px;
+	}
+	a  {
+	   font-size:35px;
+	   text-align:center;
+	   }   
+	
+		
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color:#6C4F3D;
+       }
+
+    li {
+       float: left;
+       }
+
+   li a {
+         display: inline-block;
+        color: #E5E4E2;
+        text-align: center;
+        padding: 20px 20px;
+        text-decoration: none;
+        }
+
+    li a:hover {
+                background-color: #CF9321;
+               }
+</style>
+
+<script type="text/javascript">
+ function validation(){
+ 
+//Name Validation
+	if(document.signUpform.fname.value ==""||
+	!isNaN(document.signUpform.fname.value)){
+		alert("Invalid First Name, Please Provide Correct First Name (It can't be Number)");
+		document.signUpform.fname.focus();
+		return false;
+	}
+	
+		if(document.signUpform.lname.value ==""||
+	!isNaN(document.signUpform.lname.value)){
+		alert("Invalid Last Name, Please Provide Correct Last Name (It can't be Number)");
+		document.signUpform.lname.focus();
+		return false;
+	}
+	
+//Address Validation
+	if(document.signUpform.address.value==""){
+			alert("Invalid Address, Please Provide Correct Address")
+			document.signUpform.address.focus();
+			return false;
+	}
+
+	
+//City Validation
+	if(document.signUpform.city.value ==""||
+	!isNaN(document.signUpform.city.value)){
+		alert("Invalid City, Please Provide Correct City");
+		document.signUpform.city.focus();
+		return false;
+	}
+	
+//Zip Code Validation
+	if(document.signUpform.zip.value ==""||
+	isNaN(document.signUpform.zip.value)||
+	document.signUpform.zip.value.toString().length !=5){
+		alert("Invalid Zip Code, Please Provide 5 Digits Zip Code(Like: #12345)");
+		document.signUpform.zip.focus();
+		return false;
+	}
+	
+	
+	
+//State Validation
+if(document.signUpform.state.value =="-1"){
+		alert("Please Select State");
+		return false;
+	}
+	
+//Phone Number Validation
+if(document.signUpform.phone.value ==""||
+	isNaN(document.signUpform.phone.value)||
+	document.signUpform.phone.value.toString().length !=10){
+		alert("Invalid Phone Number, Please Provide 10 Digits Phone Number (Like: #1234567890)");
+		document.signUpform.phone.focus();
+		return false;
+	
+	}
+
+	
+	
+//Email Validation
+	if(document.signUpform.email.value ==""||
+	document.signUpform.email.value.indexOf("@",0)<0||
+	document.signUpform.email.value.indexOf(".",0)<0
+	){
+		alert("Invalid Email Address, Please Provide Correst Email Address (Like: xyz@yahoo.com)");
+		document.signUpform.email.focus();
+		return false;
+	}
+	
+//Gender Validation
+if ( ( document.signUpform.gender[0].checked == false ) && 
+	( document.signUpform.gender[1].checked == false ) ) 
+	{
+		alert ( "Please Select Gender" ); 
+		return false;
+	}
+	
+//Goals Validation
+if ( document.signUpform.goal[0].checked == false&&
+	document.signUpform.goal[1].checked == false&&
+	document.signUpform.goal[2].checked == false&&
+	document.signUpform.goal[3].checked == false
+	) {
+			alert ( "Please Select Goals" ); 
+			return false;
+	}	
+	
+//Membership Validation
+if(document.signUpform.mType.value =="-1"){
+		alert("Please Select Membership Type");
+		return false;
+	}
+	
+//Payment Option Validation
+ if ( ( document.signUpform.pType[0].checked == false ) && 
+	( document.signUpform.pType[1].checked == false ) ) 
+	{
+		alert ( "Please Select Payment Option" ); 
+		return false;
+	}
+	
+//Credit Card Type Validation
+if ( ( document.signUpform.ctype[0].checked == false ) && 
+	( document.signUpform.ctype[1].checked == false ) &&
+	( document.signUpform.ctype[2].checked == false ) ) 
+	{
+		alert ( "Please Select Credit Card Type" ); 
+		return false;
+	}
+	
+//Credit Card Validation
+if(document.signUpform.cnum.value ==""||
+	isNaN(document.signUpform.cnum.value)||
+	document.signUpform.cnum.value.toString().length !=9){
+		alert("Invalid Card Number, Please Provide 9 Digits Credit Card Number (Like: #123456789)");
+		document.signUpform.cnum.focus();
+		return false;
+	
+	}
+/* CSV Number Validation 
+  Pasword Validation*/
+if(document.signUpform.csv.value ==""||
+	document.signUpform.csv.value.toString().length <=2||
+	document.signUpform.csv.value.toString().length >=5||
+	isNaN(document.signUpform.csv.value)){
+		alert("Invalid CSV Number, Please Provide 3 or 4 Digits CSV Number (Like: #123 or #1234)");
+		document.signUpform.csv.focus();
+		return false;
+		}
+
+	  
+  
+return (true);
+
+}
+
+
+ </script>
+ </head>
+
+
+<body>
+
+<h1><span style="color:#ff8000; font-size:50px; ">R.H FITNESS</span></h1><hr/>
+
+<!--Image was taken from Google-->
+<body style = "background: url(https://image.jimcdn.com/app/cms/image/transf/none/path/s9171a61b9bd3ddb7/backgroundarea/ie3cff421541b623f/version/1486509644/image.jpg);background-size:100% 100%;background-repeat:no-repeat;height:700px;background-attachment:fixed; opacity='0.5'; alt="Photo of Contact Theme";/>
+
+<ul>
+  <li><a href="index.html"><b>HOME</b></a></li>
+  <li><a href="facility.html"><b>FACILITY</b></a></li>
+  <li><a href="trainer.html"><b>TRAINER</b></a></li>
+  <li><a href="membership.html"><b>MEMBERSHIP</b></a></li>
+  <li><a href="contact.html"><b>CONTACT</b></a></li>
+ 
+ </ul>
+
+</body>
+</html>
+</style>
+
+<h2><b>Membership Form</b></h2>
+
+<!--Personal Information--->
+<h3>Personal Information:</h3>
+<form name="signUpform" onsubmit="return(validation());">
+
+
+<p>
+First Name:<input type="text" name="fname"/> 
+Last Name:<input type="text" name="lname"/><br/><br/>
+
+
+Address:<input type="text" name="address"/> 
+City:<input type="text" name="city"/>
+
+
+ZIP Code:<input type="text" name="zip">
+	  
+State:<select name="state">
+	  <option value="-1" selected>Select State</option>
+		  <option>Alabama 
+		  <option>Colorado
+		  <option>New York
+		  </select><br/><br/>
+
+Telephone Number: <input type="text" name="phone"/>
+
+Email: <input type="text" name="email"><br/><br/>
+
+
+Your Gender:<input type="radio" name="gender" value="Male">Male 
+<input type="radio" name="gender" value="Female">Female<br/><br/></p>
+	
+	<hr/>
+
+<!--Memberahip Type & Goals-->
+	
+<h3>Your Goal In The GYM:</h3>
+<p>
+			<input type ="checkbox" name="goal" value="Lose Weight"/>Lose Weight
+			<input type ="checkbox" name="goal" value="Gain Weight"/>Gain Weight
+			<input type ="checkbox" name="goal" value="Bulk Up"/>Bulk Up
+			<input type ="checkbox" name="goal" value="Get Lean"/>Get Lean<br/><br/><br/>
+		
+
+ 
+  
+<b>Platinum Card- 5 Free Classes With a Personal Trainer (<font color="red">6 Months</font>)</br>
+      Silver Card-  5 Free Classes With a Personal Trainer and You Can Bring a Guest (<font color="red">1 Year</font>)</br/>
+       Gold Card- 5 Classes With Personal Trainer, Free Guest Allowed, $25% Off (<font color="red">2 Years</font>)</b><br/><br/>   
+
+<h3>Choose Type Of Membership:<select name="mType">
+		  <option value="-1" selected>Select Membership Type</option>
+		  <option>Platinum Card 
+		  <option>Silver Card
+		  <option>Gold Card
+		  </select><br/></p>
+</h3>
+		  <hr/>
+
+
+<!--Payment Type & Option-->
+<h3>Payment Option:</h3>
+<p>
+<input type=radio name="pType" value="Cash">Cash
+<input type=radio name="pType" value="Credit">Credit<br/>
+</p>
+<h3>Card Type:</h3>
+<p>
+<input type="radio" name="ctype"  value="Visa">Visa
+<input type="radio" name="ctype"  value="Mastercard">Mastercard
+<input type="radio" name="ctype"  value="Amex">American Express<br/><br/>
+
+
+
+Credit Card#:<input type="text" name="cnum"/>
+
+CSV Number#:<input type="password" name="csv"/><br/><br/>
+
+
+<!---Feedback-->
+We Welcome Your Comments and Feedback:<br/></p>
+<textarea name="text" name="comments" maxlength="1000" cols="50" rows="5"></textarea>
+
+<input type="submit" name="send" value="Submit">
+<input type="reset" value="Reset">
+</form>
+
+
+ 
+</body>
+</html>

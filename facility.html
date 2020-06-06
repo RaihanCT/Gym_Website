@@ -1,0 +1,284 @@
+
+<!DOCTYPE html>
+<html>
+<!--Raihan Hossain-->
+<!-- 12/01/2018 -->
+<head>
+<title>R.H FITNESS</title>
+
+<style type="text/css">
+    h1 {
+        text-align:center;
+	    font-family: AR BERKLEY;
+		color: #ffa500;
+		 font-size:35spx;
+	}
+	
+	h2 {
+        text-align:center;
+	     color: red;
+		  font-size:37px;
+		  font-family: Broadway;
+	
+	    }
+	i{
+		color: #ffa500;
+		}
+	
+	a  {
+	   font-size:35px;
+	   text-align:center;
+	   }   
+	
+		
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color:#6C4F3D;
+       }
+
+    li {
+       float: left;
+    }
+
+    li a {
+        display: inline-block;
+        color: #E5E4E2;
+        text-align: center;
+        padding: 21px 21px;
+        text-decoration: none;
+    }
+
+    li a:hover {
+                background-color: #CF9321;
+               }
+	table{
+          
+		  text-align: center;
+		  width=50%;
+		  border-collapse: collapse;
+	     }
+	table th{
+	          text-align:center;
+			  background-color:#AAAAAA;
+			  color: #001704;
+			  padding:4px 30px 4px 8px;
+			 
+		  }	 
+	table td{
+	          border: 1px solid #C0C0C0;
+			  padding: 4px 8px;
+			  color:#ffa500;
+			  
+			 }	 
+		p {
+		 text-align: center;
+		}
+			
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+</style>
+</head>
+
+<body>
+
+<h1><span style="color:#ff8000; font-size:50px; ">R.H FITNESS</span></h1><hr/>
+
+<!--Image was taken from Google-->
+<body style = "background: url(http://backgroundcheckall.com/wp-content/uploads/2017/12/background-gym-6.jpg);background-size:100% 100%;background-repeat:no-repeat;height:700px;background-attachment:fixed; opacity='0.5'; alt="Photo of the blackpic";/>
+
+<ul>
+  <li><a href="index.html"><b>HOME</b></a></li>
+  <li><a href="facility.html"><b>FACILITY</b></a></li>
+  <li><a href="trainer.html"><b>TRAINER</b></a></li>
+  <li><a href="membership.html"><b>MEMBERSHIP</b></a></li>
+  <li><a href="contact.html"><b>CONTACT</b></a></li>
+ 
+ </ul>
+ <br/>
+ 
+ <h2>Interior Views</h2>
+ 
+ <!--All Images were taken from Google-->
+ <div class="slideshow-container">
+
+<div class="mySlides fade">
+  
+  <img  style="display:block; margin-left:auto; margin-right:auto;" src="https://media1.popsugar-assets.com/files/thumbor/E1dwHMlbu3h7zfKPfd1xmxe7Tcw/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2018/03/09/913/n/1922729/055f241c5aa2f4b71cc940.68895397_/i/TRX-Full-Body-Workout.jpg" width="80%" height="50%" alt="Photo of The Interior Views">
+  
+</div>
+
+<div class="mySlides fade">
+  
+  <img style="display:block; margin-left:auto; margin-right:auto;" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/33453114931863.5628ae5353707.jpg" width="80%" height="50%" alt="Photo of The Interior Views">
+ 
+</div>
+
+<div class="mySlides fade">
+  
+  <img style="display:block; margin-left:auto; margin-right:auto;" src="https://www.decoraid.com/wp-content/uploads/1/mountain_view_home_gym.jpg" width="80%" height="50%" alt="Photo of The Interior Views">
+ 
+</div>
+
+<div class="mySlides fade">
+  
+  <img style="display:block; margin-left:auto; margin-right:auto;" src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Spacious_Gym_Floor.JPG" width="80%" height="50%" alt="Photo of The Interior Views">
+ 
+</div>
+
+<div class="mySlides fade">
+  
+  <img style="display:block; margin-left:auto; margin-right:auto;" src="https://scontent-atl3-1.cdninstagram.com/vp/0ec6e4dc91a3e70cea5db8825d845569/5C610B7C/t51.2885-15/fr/e15/s1080x1080/41782785_736021376749602_5860730434030933863_n.jpg" width="80%" height="50%" alt="Photo of The Interior Views">
+ 
+</div>
+
+<div class="mySlides fade">
+  
+  <img style="display:block; margin-left:auto; margin-right:auto;" src="https://img.aws.livestrongcdn.com/ls-article-image-673/cme/photography.prod.demandstudios.com/52febb0b-8b64-4e1d-b644-875d45b39095.jpg" width="80%" height="50%" alt="Photo of The Interior Views">
+ 
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<script>
+
+//JavaScript
+// Change image every 7 seconds
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+	
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none"; 
+	   
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000);
+
+}
+</script>
+ 
+
+<h2>Some Of Our GYM Equippments</h2>
+<font size="6">
+
+
+
+<table  border="2" bordercolor="#C0C0C0"  align="center" heighst="45%" width="65%" cellpadding="3" cellspacing="3">
+
+        <tr>
+                <th width="50" height="50"><b>Instruments</b></th>
+                <th width="150" height="50"><b>Description</b></th>
+        </tr>
+		
+		 <!--All Images were taken from Google-->
+        <tr>
+                 <td><img src="https://www.roguefitness.com/media/catalog/product/cache/1/rogue_header_2015/472321edac810f9b2465a359d8cdc0b5/x/x/xx7447-lg.jpg"height="200" width="200";alt="Photo of Dumbbells";/></td>
+               <td style="color:#14BEFF;">
+                 <figcaption><font size="6"><font color="#FFC300">Dumbbells:</font>Pretty much the go-to gym equipment most people first think of when they think of bodybuilding. Varying in weight, but the same concept, a handle bar with weights on opposite ends. A must have free weight for any fitness regiment. There are even adjustable dumbbells with differing weights all in one piece.</figcaption>
+                 </td>
+        </tr>
+        <tr>
+                <td><b><img src="https://www.strengthindustry.com/image/cache/data/strength/RacksandPlatforms/Hammer%20Strength%20HD%20Elite%20Power%20Rack._600_600-600x600.jpg"height="200" width="200";alt="Photo of Squat Rsck";/></td>
+               <td style="color:#14BEFF;">
+                 <figcaption><font size="6"><font color="#FFC300">Squat Rsck:</font> Where serious squatting takes place. In fitness and strength training, the squat exercise trains your fully body.  All serious strength training regiments should incorporate the squat station gym equipment.</figcaption>
+                 </td>
+				 
+        </tr>
+        <tr>
+                <td><b><img src="https://watsongym.co.uk/wp-content/uploads/2017/05/Barbell-stacked-rack.jpg"height="200" width="200";alt="Photo of Barbells";/></td>
+               <td style="color:#14BEFF;">
+                 <figcaption><font size="6"><font color="#FFC300">Barbells:</font>A complementary piece to the squat rack. A barbell is essential to strength training, it holds the freeweights, or sometimes the weights are attached to the ends.</figcaption>
+                 </td>
+        </tr>
+        <tr>
+                 <td><b><img src="https://4.imimg.com/data4/JP/SU/MY-31623523/bench-press-machine-500x500.jpg"height="200" width="200";alt="Photo of Bench Press";/></td>
+               <td style="color:#14BEFF;">
+                 <figcaption><font size="6"><font color="#FFC300">Bench Press:</font> Used for upper body strength training exercises, where you are pushing weight upwards as you’re laying on your back. You want the perfect chest? This is one of the tools you use to train for that chest.</figcaption>
+                 </td>
+        </tr>
+	<tr>
+                 <td><b><img src="https://shop.lifefitness.com/UserFiles/Images/Products/HammerStrength-Seated-Dip-L.jpg"height="200" width="200";alt="Photo of Hammer Strength Machine";/></td>
+               <td style="color:#14BEFF;">
+                 <figcaption><font size="6"><font color="#FFC300">Hammer Strength Machine:</font> A favorite among athletes, this mechanic focuses on explosiveness.</figcaption>
+                 </td>
+        </tr>
+	<tr>
+                 <td><b><img src="https://cdn8.bigcommerce.com/s-n88j1q/images/stencil/1024x1024/products/10041/29279/steelflex-3d-lat-pull-machine__70530.1515589505.jpg?c=2"height="200" width="200";alt="Photo of Lat Pulldown Machine";/></td>
+               <td style="color:#14BEFF;">
+                 <figcaption><font size="6"><font color="#FFC300">Lat Pulldown Machine:</font> Used for strengthening your latissimus dorsi muscle, or lats as they are known. Pull downwards toward you, keeping your elbows and back straight. Google a picture of Bruce Lee and you’ll see the lats you’re capable of attaining with this machine.</figcaption>
+                 </td>
+        </tr>
+        <tr>
+                 <td><b><img src="https://images-na.ssl-images-amazon.com/images/I/41m%2BjWnR5%2BL._SX425_.jpg"height="200" width="200";alt="Photo of Preacher Bench";/></td>
+               <td style="color:#14BEFF;">
+                 <figcaption><font size="6"><font color="#FFC300">Preacher Bench:</font> While seated, the preacher curl bench helps you isolate and train your biceps. A perfect place for beginners to start biceps training by utilizing a lighter barbell and lifting up and down; slowly bringing the weight down.</figcaption>
+                 </td>
+				
+        </tr>
+		 <tr>
+                 <td><b><img src="https://lifefitness.com/product-photos/7146/frame_color:7036,second_frame_color:6941,upholstery_color:531/"height="200" width="200";alt="Photo of Calf Machine";/></td>
+               <td style="color:#14BEFF;">
+                 <figcaption><font size="6"><font color="#FFC300">Calf Machine:</font> Lifting the weights at the end by pushing upward with your feet by going on your toes. There are various types of these machines for working out, but the one pictured is by far the most common calf machine in the gym.</figcaption>
+                 </td>
+				
+        </tr>
+		
+		<tr>
+                 <td><b><img src="https://yorkbarbell.com/wp-content/uploads/2017/01/Kettlebell-Group-600x600.jpg"height="200" width="200";alt="Photo of Kettlebells";/></td>
+               <td style="color:#14BEFF;">
+                 <figcaption><font size="6"><font color="#FFC300">Kettlebells:</font> Kettle bells have become very popular in the fitness world, there are a ton of different exercises you can do with kettle bells. Fitness enthusiasts are using them for strength training and cardio. Take a look at the video for different ways to use kettle bells.</figcaption>
+                 </td>
+        </tr>
+		
+		<tr>
+                 <td><b><img src="https://images.homedepot-static.com/productImages/cb09704c-535d-4c0f-ae96-6336452d8744/svn/stamina-exercise-bikes-15-1100-64_1000.jpg"height="200" width="200";alt="Photo of Air Resistance Exercise Bike";/></td>
+               <td style="color:#14BEFF;">
+                 <figcaption><font size="6"><font color="#FFC300">Air Resistance Exercise Bike:</font> An exercise bike with a twist, the air resistance bike uses exponential resistive force generated by air to give you a thorough cardio workout.</figcaption>
+                 </td>
+        </tr>
+		
+		<tr>
+                 <td><b><img src="https://cstennis.org/wp-content/uploads/2015/01/equipment05.jpg"height="200" width="200";alt="Photo of Treadmill";/></td>
+               <td style="color:#14BEFF;">
+                 <figcaption><font size="6"><font color="#FFC300">Treadmill:</font> Your hamstrings and quadriceps do most of the work in running and walking. Raising the incline on the treadmill increases the load on your hamstrings and glutes.</figcaption>
+                 </td>
+        </tr>
+		
+</table>
+
+<p><a href="#top"><font color=#00FFFF>Top</a></p>
+
+</font>
+
+
+</body>
+</html>
